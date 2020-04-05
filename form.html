@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Formulário de Contato</title>
+        <link href="style.css" rel="stylesheet"/>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="formulario-de-contato">
+            <form name="formulario">
+                <div class="titulo-form-div">
+                    <h2 class="titulo-formulario">Contato</h2>
+                </div>
+                <div class="inputs-do-form">
+                    <div class="div-nome">
+                        <input class="campos-form" type = "text" placeholder="Nome">
+                    </div>
+                    <div class="telefone-email-div">
+                        <div class="email-div">
+                            <input class="campos-form" placeholder = "E-mail" type="email" name="email" onblur="validaEmail(formulario.email)" maxlength="60" style="width: 164%;">
+                            <div id="mensagem-email-erro"></div>
+                        </div>
+                        <div class="telefone-div">
+                            <input class="campos-form" type ="text" placeholder="Telefone" style="width: 180%;">
+                        </div>
+                    </div>
+                    <div class="div-assunto">
+                        <input class="campos-form" type = "text" placeholder="Assunto">
+                    </div>
+                    <div class="mensagem-area">
+                        <textarea class="campos-form mensagem-area" type = "text" placeholder="Mensagem"></textarea>
+                    </div>
+                </div>
+                <div class="div-botao-enviar">
+                    <input class= "botao-enviar"  type="submit" value="Enviar">
+                </div>  
+            </form>
+    </div>
+    </body>
+</html>
